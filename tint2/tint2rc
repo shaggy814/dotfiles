@@ -12,7 +12,7 @@ border_color = #859900 0
 # ID 2
 rounded = 0
 border_width = 2
-background_color = #073642 70
+background_color = #859900 70
 border_color = #859900 70
 
 # ID 3
@@ -30,7 +30,7 @@ border_color = #859900 70
 #launcher_tooltip = 0
 
 # Panel
-panel_items = CLTBS
+panel_items = TBSC
 panel_monitor = 1
 panel_position = top center horizontal
 panel_size = 100% 20
@@ -59,7 +59,7 @@ urgent_nb_of_blink = 8
 task_icon = 0
 task_text = 1
 task_centered = 1
-task_maximum_size = 140 35
+task_maximum_size = 200 35
 task_padding = 6 2
 task_background_id = 1
 task_active_background_id = 2
@@ -75,7 +75,7 @@ task_iconified_icon_asb = 70 0 0
 # Fonts
 task_font = Terminus 9
 task_font_color = #657B83 100
-task_active_font_color = #657B83 100
+task_active_font_color = #000000 100
 task_urgent_font_color = #000000 100
 task_iconified_font_color = #000000 60
 font_shadow = 0

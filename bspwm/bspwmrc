@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Padding
-bspc config -m DVI-I-2 top_padding 20
+bspc config -m DVI-I-1 top_padding 20
 
 # Borders and gaps
 bspc config border_width 0
@@ -35,8 +35,8 @@ bspc config auto_cancel true
 bspc monitor --reset-desktops 1
 bspc monitor --add-desktops 10
 bspc monitor --remove-desktops 2
-bspc monitor DVI-I-2 -d 1 2 3 4 5
-bspc monitor DVI-I-3 -d 6 7 8 9 0
+bspc monitor DVI-I-1 -d 1 2 3 4 5
+bspc monitor DVI-I-2 -d 6 7 8 9 0
 
 bspc rule -a Screenkey manage=off
 bspc rule -a feh floating=on manage=off lower=on
@@ -46,10 +46,12 @@ bspc rule -a lxappearance floating=on
 bspc rule -a chrome_app_list floating=on
 bspc rule -a Galculator floating=on
 
+xrdb -merge ~/.Xresources &
 tint2 &
+xfsettingsd &
 rofi -key-run F12 &
 nm-applet &
-volti &
-feh --bg-scale ~/Pictures/PKOdXOEblack.png &
+#volti &
+feh --bg-scale ~/Downloads/vNMiXrB.jpg &
 compton -c -C --config ~/.config/compton.conf -b --backend glx &
 
